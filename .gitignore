@@ -1,0 +1,7 @@
+#Ignore sensitive files
+
+/backend/.env
+/backend/src/main/resources/firebase-adminsdk.json
+
+/frontend/node_modules
+/frontend/.env
