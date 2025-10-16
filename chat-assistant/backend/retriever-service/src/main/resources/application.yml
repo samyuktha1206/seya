@@ -1,0 +1,48 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: retriever-service
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP:localhost:9092}
+    consumer:
+      group-id: retriever-service
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+
+      properties:
+        spring.json.trusted.package: "*"
+        spring.json.value.default.type: com.seya.ai.assistant.retrieverservice.model.RetrieverRequest
+        enable-auto-commit: false
+
+      listener:
+        ack-mode: MANUAL
+
+      producer:
+        key-serializer: org.apache.kafka.common.serialization.StringSerializer
+        value-serialization: org.springframework.kafka.support.serializer.JsonSerializer
+        properties:
+          spring.json.add.type.headers: false
+        acks: all
+        retries: 10
+      auto-offset-reset: earliest
+    app:
+      topics:
+        search-request: ${SEARCH_REQUESTS_TOPIC:search-requests.v1}
+        search-results: ${SEARCH_RESULTS_TOPIC:search-results.v1}
+        search-requests-dql: ${SEARCH_REQUESTS_DQL_TOPIC:search-requests-dql.v1}
+  cache:
+    cache-names: [serp, allowlist]
+    caffeine:
+      spec: maximumSize=1000,expireAfterWrite=10m
+
+serper:
+  base-url: https://google.serper.dev
+  api-key: ${SERPER_API_KEY}
+  timeout-ms: 2000
+
+retrieval:
+  max-result: 10
+  allowlist-file: classpath:allowlist.yml
+

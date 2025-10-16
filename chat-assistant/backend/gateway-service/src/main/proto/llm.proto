@@ -1,0 +1,27 @@
+
+//This proto defines a server-streaming RPC that returns LLMResponse messages (suitable for token streaming).
+
+
+syntax = "proto3";
+package llm;
+option java_multiple_files = true;
+option java_package = "com.example.gateway.grpc";
+option java_outer_classname = "LLMProto";
+
+message QueryRequest {
+  string correlation_id = 1;
+  string user_id = 2;
+  string query = 3;
+  // Add other fields (model, max_tokens, etc.) as required
+}
+
+message LLMResponse {
+  string token = 1;     // chunk/token of text
+  bool is_final = 2;    // final flag
+  string meta = 3;      // optional metadata / provenance
+}
+
+service LLMService {
+  // Server streaming RPC: API Gateway sends one QueryRequest and the LLM streams LLMResponse messages.
+  rpc StreamResponse (QueryRequest) returns (stream LLMResponse);
+}

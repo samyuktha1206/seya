@@ -1,0 +1,224 @@
+{
+  "id": "w01",
+  "slug": "indian-gynaec-experience",
+  "title": "The Indian Gynaec Experience",
+  "snippet": "Learn how to navigate your gynaec appointments.",
+  "durationMins": 25,
+  "intro": "Welcome!\nThis workshop is for women who want to take charge of their health while being \nbetter prepared for the realities of visiting a gynaecologist in India.\n\nMany women are met with judgmental questions, unnecessary assumptions, or even \nmoral policing during visits. That should never stop you from seeking care.\n\nIn this space, you’ll learn:\n• Your rights as a patient\n• How to prepare for a gynac visit\n• Scripts to handle difficult questions\n• Tools to support your health journey\n\nRemember: your health belongs to you.\n\nThe workshop will have multiple Journaling questions — you can either answer them here or in your own diaries.",
+  "modules": [
+    { "id": "w01-m01",
+      "slug": "01-intro", 
+      "title": "Introduction",
+      "items": [
+        {
+          "type": "questionnaire",
+          "id": "w01-m01-q01",
+          "title": "Can you answer these quick questions?",
+          "questions": [
+            {
+              "kind":"single",
+              "question": "On a scale of 1–5, how confident are you about visiting a gynaec?",
+              "options": ["1", "2", "3", "4", "5"]
+            },
+            {
+              "kind":"single",
+              "question": "What do you fear most about the experience?",
+              "options": [{"value":"Being judged for marital/sexual status"}, {"value":"Being denied contraception/abortion"}, {"value":"Lack of privacy"}, {"value":"I don’t know - it’s just not a comfortable space"}, {"value":"other", "follow-up":{"kind": "text", "placeholder": "Type your concern", "required": "true"}}]
+            },
+            {
+              "kind":"text",
+              "question": "Name one right you think you have as a patient.",
+              "placeholder": "Type your answer"
+            },
+            {
+              "kind":"single",
+              "question":"Abortion is illegal in India.",
+              "options": ["Yes", "No"]
+            },
+            {
+              "kind":"single",
+              "question": "Period pain is normal.",
+              "options": ["Yes", "No"]
+            },
+            {
+              "kind":"single",
+              "question": "Have you ever delayed or avoided visiting a gynac out of fear/judgment?",
+              "options": ["Yes", "No"]
+            },
+            {
+              "kind":"single",
+              "question": "Does weight gain cause PCOS?",
+              "options": ["Yes", "No"]
+            }
+          ]
+        },
+        {
+          "type": "slide",
+          "id": "w01-m01-s01",
+          "title": "The Indian Gynaec Experience",
+          "bg": {
+          "url": "/content/images/w01/img_01.png",
+          "fit": "cover",
+          "position": "center",
+          "overlay": 0.35},
+          "content": "**Your vagina doesn’t care about your marital status — it deserves care either way. So let’s get that check up done.**\nRegular visits are important for overall health: menstrual health, PCOS, infections, contraception, fertility planning, and preventive screening.\nThe problem is, stigma persists. Common discriminatory behaviors include:\n- • Questions about marital status before giving care.\n- • Refusal of contraception to unmarried women\n- • Invasive or shaming questions about sexual history.\n- • Body shaming\n- • Insistence on calling parents/partners for approval\n"
+        },
+        {
+          "type": "slide",
+          "id": "w01-m01-s02",
+          "title": "When the Gynaec Says: ‘No Ring, No Thing’",
+          "bg": {
+          "url": "/content/images/w01/img_01.png",
+          "fit": "cover",
+          "position": "center",
+          "overlay": 0.35},
+          "content": "*When I went for a check-up at 24, the doctor asked, ‘Why are you here if you aren’t married? You don’t need to worry about your reproductive health until then.’ I felt dismissed and embarrassed - and I avoided check-ups for 3 years after that.*\nThe doctor never asked if I was there for any symptoms. She didn’t check if I was sexually active. She straight away dismissed my presence because I was unmarried."
+        },
+        {
+          "type": "slide",
+          "id": "w01-m01-s03",
+          "title": "Journal",
+          "bg": {
+          "url": "/content/images/w01/img_01.png",
+          "fit": "cover",
+          "position": "center",
+          "overlay": 0.35},
+          "journalQuestions": ["Have you or someone you know experienced judgment at a gynac visit? How did it feel?", "If you haven’t visited one yet, what worries come to mind?"]
+        }
+      ]
+      }, 
+      {
+        "id": "w01-m02",
+        "slug": "02-rights",
+        "title": "Know Your Rights",
+        "items": [
+          {
+            "type": "questionnaire",
+            "id": "w01-m02-q01",
+            "title": "Do you know your rights?",
+            "questions": [
+              {
+                "kind": "single",
+                "question": "A doctor can call your parents/Partner if you’re unmarried and seek an abortion.",
+                "options": ["True", "Flase"]
+              },
+              {
+                "kind": "single",
+                "question": "Which of these is a patient right in India?",
+                "options": ["Right to informed consent", "Right to choose your doctor", "Right to refuse a procedure", "All of the above"]
+              },
+              {
+                "kind": "single",
+                "question": "Is prescribing contraception(other than condoms) illegal for unmarried women?",
+                "options": ["Yes", "No"]
+              },
+              {
+                "kind": "single",
+                "question": "Are emergency contraceptives banned in India?",
+                "options": ["Yes", "No"]
+              },
+              {
+                "kind": "single",
+                "question": "Do I need my partner's consent to get an abortion?",
+                "options": ["Yes", "No"]
+              },
+              {
+                "kind": "single",
+                "question": "At what age can you consent to your own treatment without a guardian?",
+                "options": ["16", "18", "21", "25"]
+              }
+            ]
+          },
+          {
+            "type": "slide",
+            "id": "w01-m02-s01",
+            "title": "Good news!",
+            "bg": {
+            "url": "/content/images/w01/img_01.png",
+            "fit": "cover",
+            "position": "center",
+            "overlay": 0.35},
+            "content": "You have legal rights as a patient in India, here are some!\n•Right to privacy (consultation should be confidential).\n•Right to informed consent (doctor must explain treatment and seek your approval).\n•Right to refuse (you can say no to any test or procedure).\n•Right to dignity (you cannot be shamed, denied, or humiliated).\n•**Abortion Rights**: Under the MTP Act abortions are legal up to 20-24 weeks with conditions — and unmarried women are entitled to access. Only the pregnant person’s consent is required.\n**Contraception Access:** Doctors cannot legally refuse contraception because of marital status.\n**Consent Age:** At 18+, you can legally consent to your own medical treatment.\n**Emergency Contraception** is NOT banned in india.\n",
+            "resources": [
+              {
+                "label": "MTP Act",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/6832/1/mtp-act-1971.pdf"
+              },
+              {
+                "label": "Legal Rights of a Patient in India",
+                "url": "https://nhrc.nic.in/sites/default/files/charter_patient_rights_by_NHRC_2019.pdf"
+              }
+            ]
+          },
+          {
+            "type": "slide",
+            "id": "w01-m02-s02",
+            "title": "Bad news!",
+            "bg": {
+            "url": "/content/images/w01/img_01.png",
+            "fit": "cover",
+            "position": "center",
+            "overlay": 0.35},
+            "content": "Emergency contraceptive pills are not banned in India, but access may be challenging in most parts of India due to unofficial restrictions and ongoing policy debates about their regulation.\n",
+            "resources": [
+              {
+                "label": "Read",
+                "url": "https://behanbox.com/2025/03/21/why-tamil-nadu-must-clarify-conflicting-signals-about-reproductive-choices/\n"
+              }
+            ],
+            "table": {
+              "columns": ["State/Area", "Status of Access to ECPs"],
+              "rows": [["Tamil Nadu", "https://www.thenewsminute.com/premium/unsuccessful-hunt-emergency-contraceptive-pill-chennai-165554"], ["North India (e.g. UP)", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4168613/"], ["Rural/Low-Income Areas", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4168613/"], ["Most Metro Cities", "Generally easier, but with pockets of misinformation"]]
+            }
+          }
+        ]
+      },
+      {
+        "id": "w01-m03",
+        "slug": "03-judgement", 
+        "title":"Tackling Judgment in the Doctor’s Room",
+        "items": [
+          {
+            "type": "slide",
+            "id": "w01-m03-s01",
+            "title": "Why it matters",
+            "bg": {
+            "url": "/content/images/w01/img_01.png",
+            "fit": "cover",
+            "position": "center",
+            "overlay": 0.35},
+            "content": "Most times doctors make comments that feel judgmental — like “You shouldn’t be sexually active before marriage” or “Period pain is normal, stop fussing.” It can feel scary or even silencing, and that’s not okay. You deserve respectful care.\n**What can you do:**\n•**Acknowledge the discomfort (to yourself):**It’s normal to feel anxious, angry, or even ashamed in the moment. That reaction doesn’t mean you’re weak — it means the situation is unfair. We do not deserve judgement for seeking care!\n"
+          }
+        ]
+      },
+      {
+        "id": "w01-m04",
+        "slug": "04-scenarios",
+        "title": "Handling Scenarios"},
+      {
+        "id": "w01-m05",
+        "slug": "05-tools",
+        "title": "Tools & Resources so you can go get that test done!!"
+      },
+      {
+        "id":"w01-m06",
+        "slug": "05-survey",
+        "title": "Post-Workshop Survey: Taking Charge at the Gynac",
+        "items": [
+          {
+            "type":"questionnaire",
+            "id": "q01",
+            "title": "Knowledge Check",
+            "content": "Thank you for completing this workshop! This survey will help you reflect on what you learned and help us improve future sessions.\nOn a scale of 1–5, how confident do you feel about visiting a gynaecologist after this workshop?\n  • 1 = Not confident at all\n  • 5 = Very confident",
+            "questions": [
+
+            ]
+          },
+          {
+            "type": "slide"
+          }
+        ]
+        
+      }
+  ] 
+}

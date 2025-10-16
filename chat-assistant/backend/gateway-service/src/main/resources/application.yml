@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+llm:
+  gateway:
+    host: localhost
+    port: 50051
+
+spring:
+  main:
+    web-application-type: reactive
